@@ -1,0 +1,20 @@
+create table my_hospital (
+Customer_Name varchar2(255) not null,
+Customer_ID number(18) primary key,
+Customer_Open_Date Date not null,
+Last_Consulted_Date Date,
+Vaccination_Type varchar2(5),
+Doctor_Consulted varchar2(255),
+State varchar2(5),
+Country varchar2(5),
+DOB DATE,
+Flag varchar2(1)
+)
+
+
+insert into my_hospital values('Alex',123457,TO_DATE('2010-10-12','YYYY-MM-DD'),TO_DATE('2012-10-13','YYYY-MM-DD'),'MVD','Paul','SA','USA',TO_DATE('06-03-1987','DD-MM-YYYY'),'A');
+insert into my_hospital values('John',123458,TO_DATE('2010-10-12','YYYY-MM-DD'),TO_DATE('2012-10-13','YYYY-MM-DD'),'MVD','Paul','TN','IND',TO_DATE('06-03-1987','DD-MM-YYYY'),'A');
+insert into my_hospital values('Mathew',123459,TO_DATE('2010-10-12','YYYY-MM-DD'),TO_DATE('2012-10-13','YYYY-MM-DD'),'MVD','Paul','WAS','PHIL',TO_DATE('06-03-1987','DD-MM-YYYY'),'A');
+insert into my_hospital values('Matt',12345,TO_DATE('2010-10-12','YYYY-MM-DD'),TO_DATE('2012-10-13','YYYY-MM-DD'),'MVD','Paul','BOS','NYC',TO_DATE('06-03-1987','DD-MM-YYYY'),'A');
+insert into my_hospital values('Jacob',1256,TO_DATE('2010-10-12','YYYY-MM-DD'),TO_DATE('2012-10-13','YYYY-MM-DD'),'MVD','Paul','VIC','AU',TO_DATE('06-03-1987','DD-MM-YYYY'),'A');
+
